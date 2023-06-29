@@ -28,9 +28,6 @@ data_tmp=get_data("city021/city021_*.txt")
 data_in=get_data("city022/city022_*.txt")
 ##フレーム数はファイルのフレーム数＋１（０フレーム字を追加しているため）
 
-count=0
-
-test=1
 collect=0
 
 #テンプレート側の単語指定
@@ -105,6 +102,5 @@ for word_tmp in range(len(data_tmp)):
     print(word_tmp)
     print(t_min_word)
     print("----------")
-    test+=1
 
 print("正解率は",collect,"%")
